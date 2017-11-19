@@ -218,7 +218,7 @@ def bake(scene,objects):
 				else:
 					filepath_ext = image.file_format.lower()
 					image.filepath_raw = '//'+Out_Dir+'/unknown'
-					image.filepath_ext = '.jpg'
+					image.file_format = 'JPEG'
 
 				if not re.match('.*'+Out_Postfix+'$', image.filepath_raw):
 					image.filepath_raw += Out_Postfix + Out_Ext
